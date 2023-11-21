@@ -1,0 +1,12 @@
+.in-search {
+        background-image: url(https://app.svdu.cz/codepad-0/img/search.svg);
+        width: var(--width-center);
+        background-position: 11px 8px;
+        background-size: 17px;
+        background-repeat: no-repeat;
+        padding: 7px 7px 7px 40px;
+        border: 1px solid #e4e4e4;
+        border-radius: 4px;
+        font-family: consolas;
+        outline: none;
+}

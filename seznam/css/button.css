@@ -1,0 +1,32 @@
+.btn {
+        border-radius: 5px;
+        padding: 3px 11px 1px 39px;
+        font-size: .8rem;
+        text-decoration: none;
+        color: #fff;
+        position: absolute;
+        top: 15px;
+        left: 16px;
+        background-image: url(../img/ico.svg);
+        background-position: 3px 0px;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        font-family: consolas;
+        line-height: 25px;
+        z-index: 500;
+}
+
+.btn:active {
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+        background-color: #fd9500;
+        box-shadow: 0px 3px 0px 0px #bc6f00;
+}
+
+.blue:hover {
+        background-color: #ff8900;
+}
