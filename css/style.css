@@ -935,6 +935,15 @@ footer p {
 
 /* +++++++++++++*/
 
+.sos-orange {
+        color: #f86f03;
+}
+
+.sos-mini {
+        font-size: 18px;
+        color: #212529;
+}
+
 #back-to-top {
         position: fixed;
         left: 5px !important;
