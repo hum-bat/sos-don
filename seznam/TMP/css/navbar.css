@@ -9,11 +9,9 @@
         left: 0;
         padding: var(--nav-max) 10px;
         z-index: 99;
+
+        /* background-image: url(../img/logo.svg); */
         background-position: 5px 5px;
         background-size: 114px 67px;
         background-repeat: no-repeat;
-}
-
-.nav-box {
-        padding: 20px 14px;
 }

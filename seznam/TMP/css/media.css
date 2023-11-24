@@ -12,7 +12,7 @@
         }
 
         .container {
-                padding-top: 65px;
+                padding-top: 65px !important;
         }
 
         .elem-br {
@@ -58,19 +58,15 @@
         }
 
         .btn {
-                position: fixed;
-                bottom: 7px;
-                left: 6px;
-                top: inherit;
+
                 background-position: 2px -1px !important;
         }
 
-        #sum {
-                padding: 13px 0 0 148px;
-        }
-
-        .nav-box {
-                padding: 0px 3px;
+        .home-box {
+                position: fixed;
+                bottom: 14px;
+                left: 6px;
+                top: inherit;
         }
 
 }

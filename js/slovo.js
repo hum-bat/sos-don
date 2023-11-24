@@ -12,7 +12,28 @@ let allText = `
 
 `;
 
+let res = '';
+
 document.addEventListener("DOMContentLoaded", function (event) {
-    document.querySelector("#myUL").innerHTML = allText;
+
+    const myUL = document.querySelector("#myUL");
+
+    if (myUL) {
+        myUL.innerHTML = allText;
+    }
+
+    let pattern = /\d.*(?=K)/g;
+    let result = allText.match(pattern) + '';
+    result = result.replace(/[^,\d]/g, '');
+    res += result;
+
+    let sumX = res.match(/\-?\d+/g).reduce((sum, el) => sum + +el, 0);
+
+    const mySum = document.querySelector("#sum");
+
+    if (mySum) {
+        mySum.innerHTML = 'Vybráno ' + sumX.toLocaleString() + ' Kč';
+    }
+
     allText = '';
 });
