@@ -9,6 +9,7 @@ let allText = `
 <li><span>Marie  | 250Kč    | ******4516/2700 | 24.11.2023</span></li>
 <li><span>Helena | 400Kč    | ******3702/3030 | 24.11.2023</span></li>
 <li><span>Pavel  | 100Kč    | ******2036/0300 | 24.11.2023</span></li>
+<li><span>ATM PŘ.| 600Kč    | ******1770/0600 | 27.11.2023</span></li>
 
 `;
 
