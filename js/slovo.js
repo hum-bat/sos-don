@@ -13,20 +13,24 @@ let allText = `
 <li><span>Vlastimil | 1 000Kč  | ******8202/2010 | 29.11.2023</span></li>
 <li><span>Michal    | 300Kč    | ******5744/6210 | 29.11.2023</span></li>
 <li><span>Eva       | 500Kč    | ******6083/0800 | 30.11.2023</span></li>
-<li><span>Jaromír   | 250Kč    | ******3043/0800 | 5.12.2023</span></li>
-<li><span>Josef     | 750Kč    | ******0534/7314 | 5.12.2023</span></li>
-<li><span>Anna      | 2 000Kč  | ******5501/0300 | 6.12.2023</span></li>
-<li><span>Eva       | 500Kč    | ******6083/0800 | 6.12.2023</span></li>
-<li><span>Stanislav | 500Kč    | ******3841/2010 | 7.12.2023</span></li>
+<li><span>Jaromír   | 250Kč    | ******3043/0800 | 05.12.2023</span></li>
+<li><span>Josef     | 750Kč    | ******0534/7314 | 05.12.2023</span></li>
+<li><span>Anna      | 2 000Kč  | ******5501/0300 | 06.12.2023</span></li>
+<li><span>Eva       | 500Kč    | ******6083/0800 | 06.12.2023</span></li>
+<li><span>Stanislav | 500Kč    | ******3841/2010 | 07.12.2023</span></li>
 <li><span>Eva       | 500Kč    | ******6083/0800 | 13.12.2023</span></li>
 <li><span>Alexandr  | 2 000Kč  | ******8014/3030 | 13.12.2023</span></li>
+<li><span>Bronislava| 750Kč    | ******2430/8531 | 14.12.2023</span></li>
 <li><span>Karel     | 300Kč    | ******7015/3030 | 15.12.2023</span></li>
 <li><span>Martin    | 200Kč    | ******9015/3030 | 18.12.2023</span></li>
 <li><span>Eva       | 500Kč    | ******6083/0800 | 19.12.2023</span></li>
+<li><span>Rastislav | 750Kč    | ******0072/9851 | 19.12.2023</span></li>
+<li><span>David     | 1 000Kč  | ******3860/0300 | 20.12.2023</span></li>
+<li><span>Jan       | 300Kč    | ******8023/0800 | 20.12.2023</span></li>
 
 `;
 
-// <li><span>| Kč    | ****** | 13.12.2023</span></li>
+// <li><span>| Kč    | ****** | 20.12.2023</span></li>
 
 let res = '';
 
