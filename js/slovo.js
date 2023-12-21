@@ -27,6 +27,7 @@ let allText = `
 <li><span>Rastislav | 750Kč    | ******0072/9851 | 19.12.2023</span></li>
 <li><span>David     | 1 000Kč  | ******3860/0300 | 20.12.2023</span></li>
 <li><span>Jan       | 300Kč    | ******8023/0800 | 20.12.2023</span></li>
+<li><span>Vladimír  | 1 000Kč  | ******2153/0800 | 21.12.2023</span></li>
 
 `;
 
