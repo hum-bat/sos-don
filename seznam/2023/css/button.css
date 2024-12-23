@@ -1,0 +1,54 @@
+.btn {
+        border-radius: 5px;
+        padding: 9px 11px 5px 39px;
+        font-size: .8rem;
+        text-decoration: none;
+        color: #fff !important;
+        background-image: url(../img/ico.svg);
+        background-position: 3px 1px;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        font-family: consolas;
+        font-weight: 600;
+}
+
+.home-box {
+        position: fixed;
+        top: 15px;
+        left: 16px;
+        z-index: 500;
+}
+
+#sum {
+        color: #ff9600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 7px 0 0 13px;
+        font-family: 'Overpass', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-align: center;
+}
+
+.btn:active {
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+        background-color: #fd9500;
+        box-shadow: 0px 3px 0px 0px #bc6f00;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        width: 80px;
+        height: 17px;
+        z-index: 999;
+}
+
+.blue:hover {
+        background-color: #ff8900;
+}

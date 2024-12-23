@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg" href="../img/favicon.svg">
+        <title>QR Code Generator</title>
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: 'Montserrat', sans-serif;
+                }
+
+                body {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-height: 100vh;
+                        background: #9882f6;
+                }
+
+                .wrapper {
+                        height: 275px;
+                        max-width: 415px;
+                        background: #fff;
+                        border-radius: 10px;
+                        padding: 16px 25px 0;
+                        transition: height 0.4s ease;
+                }
+
+                .wrapper.active {
+                        height: 530px;
+                }
+
+                header h1 {
+                        font-size: 1.58rem;
+                        font-weight: 500;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                }
+
+                header p {
+                        margin-top: 5px;
+                        color: #383e59;
+                        font-size: 14px;
+                }
+
+                .wrapper .form {
+                        margin: 20px 0 20px;
+                }
+
+                .form :where(input, button) {
+                        width: 100%;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                }
+
+                .form input {
+                        font-size: 16px;
+                        padding: 0 14px;
+                        border: 1px solid #b1b6ce;
+                }
+
+                .form button {
+                        color: #fff;
+                        cursor: pointer;
+                        margin: 15px 0 15px;
+                        font-size: 16px;
+                        background: #9882f6;
+                }
+
+                .wrapper .qr-code {
+                        display: flex;
+                        opacity: 0;
+                        pointer-events: none;
+                        padding: 40px 0;
+                        border-radius: 5px;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #ccc;
+                }
+
+                .wrapper.active .qr-code {
+                        opacity: 1;
+                        pointer-events: auto;
+                        transition: opacity 0.3s 0.3s ease;
+                }
+
+                .url-home {
+                        width: 1.5rem;
+                        aspect-ratio: 1/1;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="wrapper">
+                <header>
+                        <h1><a href="../"><img src="../img/favicon.svg" alt="Odkaz Domů" title="Domů - SOS DONBASS"
+                                                class="url-home"></a> -
+                                Generátor
+                                QR kódů</h1>
+                        <p>Zvolte částku v Kč, kterou chcete věnovat na sbírku SOS DONBASS. Vytvoříme pro vás QR kód pro
+                                snadný převod na číslo účtu: 1488739013/2700</p>
+                </header>
+                <div class="form">
+                        <input type="search" placeholder="Zadejte částku" value="50">
+                        <button>Vytvořit QR kód</button>
+                        <div class="qr-code">
+                                <img src="" alt="qr-code">
+                        </div>
+                </div>
+        </div>
+
+        <script>
+                const wrapper = document.querySelector(".wrapper"),
+                        qrInput = wrapper.querySelector(".form input"),
+                        createButton = wrapper.querySelector(".form button"),
+                        qrImage = wrapper.querySelector(".qr-code img");
+
+                function formatNumberWithSpaces(value) {
+                        return value.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                }
+
+                function cleanNumber(value) {
+                        return value.replace(/\s/g, "");
+                }
+
+                qrInput.addEventListener("input", () => {
+                        let cleanedValue = cleanNumber(qrInput.value);
+                        if (!/^[0-9]*$/.test(cleanedValue)) {
+                                qrInput.value = formatNumberWithSpaces(cleanNumber(qrInput.value.slice(0, -1)));
+                                return;
+                        }
+                        qrInput.value = formatNumberWithSpaces(cleanedValue);
+                });
+
+                createButton.addEventListener("click", () => {
+                        let amount = cleanNumber(qrInput.value.trim());
+                        if (!amount || isNaN(amount) || parseFloat(amount) < 1) {
+                                alert("Please enter a valid amount greater than 0");
+                                return;
+                        }
+
+                        let qrValue = `SPD*1.0*ACC:CZ2727000000001488739013*AM:${parseFloat(amount).toFixed(2)}*CC:CZK*MSG:SOS DONBASS`;
+
+                        createButton.innerText = "Generování QR kódu...";
+
+                        qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=${encodeURIComponent(qrValue)}`;
+
+                        qrImage.addEventListener("load", () => {
+                                wrapper.classList.add("active");
+                                createButton.innerText = "Vytvořit QR kód";
+                        });
+                });
+
+                qrInput.addEventListener("keyup", () => {
+                        if (!qrInput.value.trim()) {
+                                wrapper.classList.remove("active");
+                        }
+                });
+        </script>
+</body>
+
+</html>

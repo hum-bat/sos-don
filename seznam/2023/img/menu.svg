@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29167 132.29167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="menu-3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#2e2e2e"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="1.0649028"
+     inkscape:cx="112.68634"
+     inkscape:cy="300.02738"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="true" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1190"
+       transform="translate(1.0583334,1.0583334)"
+       style="fill:#333333">
+      <circle
+         style="fill:#333333;stroke-width:2.35268;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9.4107, 9.4107"
+         id="circle1184"
+         cx="66.145836"
+         cy="66.145836"
+         r="9.8384237" />
+      <circle
+         style="fill:#333333;stroke-width:2.35268;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9.4107, 9.4107"
+         id="circle1186"
+         cx="95.687965"
+         cy="66.145836"
+         r="9.8384237" />
+      <circle
+         style="fill:#333333;stroke-width:2.35268;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9.4107, 9.4107"
+         id="circle1188"
+         cx="36.603706"
+         cy="66.145836"
+         r="9.8384237" />
+    </g>
+    <g
+       id="g1182">
+      <circle
+         style="fill:#ffffff;stroke-width:2.35268;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9.4107, 9.4107"
+         id="path933"
+         cx="66.145836"
+         cy="66.145836"
+         r="9.8384237" />
+      <circle
+         style="fill:#ffffff;stroke-width:2.35268;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9.4107, 9.4107"
+         id="circle1015"
+         cx="95.687965"
+         cy="66.145836"
+         r="9.8384237" />
+      <circle
+         style="fill:#ffffff;stroke-width:2.35268;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9.4107, 9.4107"
+         id="circle1017"
+         cx="36.603706"
+         cy="66.145836"
+         r="9.8384237" />
+    </g>
+  </g>
+</svg>
